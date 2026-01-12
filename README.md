@@ -20,8 +20,6 @@ A public, sanitized technical case study of a CI pipeline I designed and impleme
 - [Security and Public-Repo Notes](#security-and-public-repo-notes)
 - [Results](#results)
 - [What I Would Improve Next](#what-i-would-improve-next)
-- [Resume Bullets](#resume-bullets)
-- [License](#license)
 
 ---
 
@@ -247,17 +245,3 @@ This approach enabled:
 - add parallelization for independent workflows
 - add a lightweight test summary (per workflow status, artifact links, metadata)
 - improve normalization for non-deterministic output fields
-
----
-
-## Resume Bullets
-
-- Designed a CI pipeline that boots and validates a Linux VM in QEMU using a deterministic kernel + initrd approach, enabling repeatable system-level testing.
-- Built a Go (Cobra) CLI harness for workflow execution and output validation, producing clear pass/fail signals and reducing manual verification.
-- Implemented artifact versioning for VM images and logs to support reproducibility and faster debugging across CI runs.
-
----
-
-## License
-
-MIT License (recommended for a public case-study repo). See `LICENSE` for details.
