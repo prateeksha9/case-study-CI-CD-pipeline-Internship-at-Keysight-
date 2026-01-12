@@ -200,52 +200,6 @@ Recommended CI artifacts:
 
 ---
 
-## Repo Structure
-
-Suggested layout for a public version of the project:
-
-```text
-.
-├── README.md
-├── docs/
-│   ├── architecture.md
-│   ├── failure-modes.md
-│   └── extension-guide.md
-├── ci/
-│   ├── pipeline.yml
-│   ├── qemu/
-│   │   ├── run_vm.sh
-│   │   ├── boot_args.txt
-│   │   └── healthcheck.sh
-│   ├── provision/
-│   │   ├── setup_instance.sh
-│   │   └── create_users.sh
-│   └── workflows/
-│       ├── run_workflows.sh
-│       ├── scenarios/
-│       │   ├── scenario_checkout_checkin.yaml
-│       │   ├── scenario_activation.yaml
-│       │   └── scenario_stats.yaml
-│       └── expected/
-│           ├── checkout_expected.txt
-│           ├── checkin_expected.txt
-│           ├── activation_expected.txt
-│           └── stats_expected.txt
-├── cli/
-│   └── validator/
-│       ├── cmd/
-│       ├── internal/
-│       ├── main.go
-│       └── go.mod
-└── examples/
-    └── sanitized-logs/
-        ├── console.log
-        ├── provision.log
-        ├── workflows.log
-        └── diff.log
-
----
-
 ## Extending the Test Suite
 
 To add a new workflow:
